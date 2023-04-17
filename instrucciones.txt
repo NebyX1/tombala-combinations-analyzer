@@ -1,0 +1,19 @@
+El programa está diseñado para recibir un archivo JSON con el nombre sorteo, 
+el cual tiene que tener una estructura muy particular, algo similar a esto:
+[
+{"Resultado_Sábado_15_de_Abril_de_2023": [14,15,19,20,22,23,28,29,43,46,54,61,70,71,77,80,86,87,91,96]},
+{"Resultado_Viernes_14_de_Abril_de_2023": [10,18,19,22,24,29,34,40,41,44,55,67,70,74,76,82,90,91,92,93]},
+{"Resultado_Jueves_13_de_Abril_de_2023": [0,6,7,19,22,36,37,38,42,43,60,62,63,64,67,70,78,85,89,98]},
+{"Resultado_Miércoles_12_de_Abril_de_2023": [1,2,4,5,15,24,26,29,32,35,41,42,45,49,73,78,79,81,84,98]},
+]
+
+El archivo JSON debe de estar dentro del directorio raíz donde se encuentra el script, sino, no lo ejecutará.
+
+Para ejecutar dicho script llamado tombola.py, es necesario tener instalado Python 3.10 en adelante.
+
+También es necesario instalar las librerías y dependencias requeridas para que funcione, para ello
+hay que ejecutar el comando: "pip install -r requirements.txt" en la consola de comando.
+
+Luego desde la consola de comando, se debe ejecutar el comando "python tombola.py" para que genere un 
+archivo excel con las combinaciones en caso de haberlas, si no hay combinaciones posibles, devolverá 
+un mensaje indicándolo.
